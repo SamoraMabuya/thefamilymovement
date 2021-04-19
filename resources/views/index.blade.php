@@ -23,7 +23,7 @@
     <!-- Font awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{secure_asset ('css/style.css') }}" rel="stylesheet">
+    <link href="{{asset ('css/style.css') }}" rel="stylesheet">
     <link href="css/style-color.css" rel="stylesheet">
 
     <!-- Favicon -->
