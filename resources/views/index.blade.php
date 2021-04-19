@@ -23,7 +23,7 @@
     <!-- Font awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{secure_asset ('css/style.css') }}" rel="stylesheet">
+    <link href="{{asset ('css/style.css') }}" rel="stylesheet">
     <link href="css/style-color.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -954,7 +954,7 @@
                         <!-- paragraph -->
                         <p>Get a hold of us below.</p>
                         <form role="form" id="contactForm" name="index" method="post" action="{{route('index.submit')}}">
-                            {{ csrf_field() }}
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
