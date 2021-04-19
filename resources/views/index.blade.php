@@ -954,7 +954,7 @@
                     <div class="form-content ">
                         <!-- paragraph -->
                         <p>Get a hold of us below.</p>
-                        <form  id="contactForm" name="index" method="POST" action="{{ secure_url('index.submit')}}">
+                        <form role="form" id="contactForm" name="index" method="post" action="{{secure_route('index.submit')}}">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
