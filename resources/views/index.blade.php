@@ -23,7 +23,7 @@
     <!-- Font awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{secure_asset ('css/style.css') }}" rel="stylesheet">
+    <link href="{{asset ('css/style.css') }}" rel="stylesheet">
     <link href="css/style-color.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -54,7 +54,9 @@
 </head>
 
 <body>
+<center>
 @include('cookieConsent::index')
+<center/>
     <div class="modal fade" id="bookTicket" tabindex="-1" role="dialog" aria-labelledby="BookTicket">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
