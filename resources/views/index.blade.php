@@ -954,7 +954,7 @@
                         <!-- paragraph -->
                         <p>Get a hold of us below.</p>
                         <form role="form" id="contactForm" name="index" method="post" action="{{route('index.submit')}}">
-                            @csrf
+                            {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
