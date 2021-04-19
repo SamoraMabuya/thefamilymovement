@@ -23,7 +23,7 @@
     <!-- Font awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{asset ('css/style.css') }}" rel="stylesheet">
+    <link href="{{secure_asset ('css/style.css') }}" rel="stylesheet">
     <link href="css/style-color.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -65,7 +65,8 @@
                     <h4 class="modal-title" id="myModalLabel">Name of The Event &nbsp; <small><span class="label label-success">Available</span> &nbsp; <span class="label label-danger">Not Available</span></small></h4>
                 </div>
                 <!-- form for events ticket booking -->
-                <form>
+                <div>
+                @csrf
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
@@ -96,7 +97,7 @@
                         <!-- link to payment gatway here -->
                         <button type="button" class="btn btn-primary">Book Now</button>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
